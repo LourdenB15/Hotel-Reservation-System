@@ -37,23 +37,12 @@ This is a console-based Hotel Reservation System application built with C# that 
 5. Follow the on-screen prompts.
 6. Enjoy the application.
 
-## How to Run
-
-1. **Prerequisites**:
-   - .NET SDK installed (version 6.0 or higher recommended)
-
-2. **Running the Application**:
-
-   ```bash
-   dotnet run
-   ```
-
-3. **Using the Application**:
-   - Main menu provides options to:
-     - View all rooms
-     - Make a reservation
-     - Cancel a reservation
-     - Exit the system
+## Using the Application
+- Main menu provides options to:
+  - View all rooms
+  - Make a reservation
+  - Cancel a reservation
+  - Exit the system
 
 ## Example Usage
 1. View all rooms to see availability and prices
