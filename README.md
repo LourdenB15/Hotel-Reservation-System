@@ -49,11 +49,11 @@ This is a console-based Hotel Reservation System application built with C# that 
    ```
 
 3. **Using the Application**:
-  - Main menu provides options to:
-    - View all rooms
-    - Make a reservation
-    - Cancel a reservation
-    - Exit the system
+   - Main menu provides options to:
+     - View all rooms
+     - Make a reservation
+     - Cancel a reservation
+     - Exit the system
 
 ## Example Usage
 1. View all rooms to see availability and prices
