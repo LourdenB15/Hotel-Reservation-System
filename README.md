@@ -29,6 +29,14 @@ This is a console-based Hotel Reservation System application built with C# that 
 - Abstract `Room` class with abstract method
 - Implementation details hidden in derived classes
 
+## Installation & Setup
+1. Clone the repository or download the ZIP file.
+2. Open the project in Visual Studio or any C# IDE.
+3. Build the project to restore dependencies.
+4. Run the project to start the console application.
+5. Follow the on-screen prompts.
+6. Enjoy the application.
+
 ## How to Run
 
 1. **Prerequisites**:
