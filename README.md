@@ -54,3 +54,42 @@ The application includes comprehensive error handling for:
 - Invalid menu choices
 - Invalid room numbers
 - Invalid input formats
+
+## Testing & Edge Cases
+
+### Test Case 1: Main Menu - Enter an invalid number
+- **Input**: Choice `w`
+- **Expected Output**: Please enter a valid number.
+
+### Test Case 2: Main Menu - Enter a number not included in the options
+- **Input**: Choice `5`
+- **Expected Output**: Invalid choice. Please try again.
+
+### Test Case 3: Make/Cancel Reservation - Enter an invalid room number
+- **Input**: Room number `w`
+- **Expected Output**: Invalid room number.
+
+### Test Case 4: Make/Cancel Reservation - Enter a non-existent room number
+- **Input**: Room number `111`
+- **Expected Output**: Room not found.
+
+### Test Case 5: Make Reservation - Enter an existent room number *not* reserved
+- **Input**: Room number `201`
+- **Expected Output**: //***Reservation made for Room 201***//
+
+### Test Case 6: Make Reservation - Enter an existent room number, *already* reserved
+- **Input**: Room number `201`
+- **Expected Output**: Room 201 is already reserved.
+
+### Test Case 7: Cancel Reservation - Enter an existent room number, *not* reserved
+- **Input**: Room number `202`
+- **Expected Output**: Room 201 is not currently reserved.
+
+### Test Case 8: Cancel Reservation - Enter an existent room number, reserved
+- **Input**: Room number `201`
+- **Expected Output**: //---Reservation canceled for Room 201---//
+
+## Creators
+- Baydal, Lourden
+- Empic, Thrik Dipmi
+- Macan, Christian Carl
