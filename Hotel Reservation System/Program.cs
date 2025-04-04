@@ -46,18 +46,16 @@ namespace Hotel_Reservation_System
                 {
                     Console.WriteLine("Please enter a valid number.");
                 }
-                catch (Exception ex)
-                {
-                    Console.WriteLine($"Error: {ex.Message}");
-                }
                 Console.WriteLine("===========================================");
             }
         }
+
+        // Reservation flow
         static void MakeReservation(Hotel hotel)
         {
             Console.Write("\nEnter room number to reserve: ");
 
-            if (int.TryParse(Console.ReadLine(), out int roomNumber))
+            if (int.TryParse(Console.ReadLine(), out int roomNumber)) // Check if input is number
             {
                 Room room = hotel.FindRoom(roomNumber);
                 if (room != null)
@@ -74,10 +72,13 @@ namespace Hotel_Reservation_System
                 Console.WriteLine("Invalid room number.");
             }
         }
+
+        // Cancellation flow
         static void CancelReservation(Hotel hotel)
         {
             Console.Write("\nEnter room number to cancel reservation: ");
-            if(int.TryParse(Console.ReadLine(), out int roomNumber))
+            
+            if(int.TryParse(Console.ReadLine(), out int roomNumber)) // Check if input is number
             {
                 Room room = hotel.FindRoom(roomNumber);
                 if(room != null)

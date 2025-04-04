@@ -9,6 +9,8 @@ namespace Hotel_Reservation_System
 {
     internal class StandardRoom : Room
     {
+        // Standard Room properties with getters and setters
+
         public bool HasWifi { get; private set; }
 
         public StandardRoom(int roomNumber, double price, bool hasWifi) : base (roomNumber, price)

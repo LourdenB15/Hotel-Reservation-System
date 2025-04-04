@@ -6,8 +6,11 @@ using System.Threading.Tasks;
 
 namespace Hotel_Reservation_System
 {
+    // Base class of the rooms: Standard and Deluxe rooms
     internal abstract class Room
     {
+        // Room properties with getters and setters
+
         private int _roomNumber;
         private double _price;
         public bool IsReserved { get; protected set; }
@@ -31,6 +34,7 @@ namespace Hotel_Reservation_System
             }
         }
 
+        // Constructor
         protected Room(int roomNumber, double price)
         {
             RoomNumber = roomNumber;
@@ -38,13 +42,10 @@ namespace Hotel_Reservation_System
             IsReserved = false;
         }
 
+        // Abstract method to be overriden by derived classes
         public abstract void DisplayRoomInfo();
 
-        //public virtual void DisplayRoomInfo()
-        //{
-        //    Console.WriteLine("Needs to be overriden");
-        //}
-
+        // If IsReserved is false, change value to true
         public void MakeReservation()
         {
             if(IsReserved)
@@ -56,6 +57,7 @@ namespace Hotel_Reservation_System
             Console.WriteLine($"\n//***Reservation made for Room {RoomNumber}***//");
         }
 
+        // If IsReserved is true, change value to false
         public void CancelReservation()
         {
             if(IsReserved)
@@ -65,7 +67,6 @@ namespace Hotel_Reservation_System
                 return;
             }
             Console.WriteLine($"Room {RoomNumber} is not currently reserved.");
-
         }
     }
 }

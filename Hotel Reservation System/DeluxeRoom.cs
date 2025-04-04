@@ -8,6 +8,7 @@ namespace Hotel_Reservation_System
 {
     internal class DeluxeRoom : Room
     {
+        // Deluxe Room properties with getters and setters
         public bool HasBalcony { get; private set; }
         public bool HasMiniBar { get; private set; }
 
