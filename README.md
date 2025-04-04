@@ -73,9 +73,9 @@ The application includes comprehensive error handling for:
 - **Input**: Room number `111`
 - **Expected Output**: Room not found.
 
-### Test Case 5: Make Reservation - Enter an existent room number *not* reserved
+### Test Case 5: Make Reservation - Enter an existent room number, *not* reserved
 - **Input**: Room number `201`
-- **Expected Output**: //***Reservation made for Room 201***//
+- **Expected Output**: //\*\*\*Reservation made for Room 201\*\*\*//
 
 ### Test Case 6: Make Reservation - Enter an existent room number, *already* reserved
 - **Input**: Room number `201`
